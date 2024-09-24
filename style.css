@@ -1,110 +1,112 @@
-*{
-    margin:0;
+* {
+  margin: 0;
 }
 
-
-
-.container{
-    height: 500px;
-    width: 430px;
-    background-color: black;
-    /* display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; */
-    position: absolute;
-    right: 50%;
-    top: 25%;
-    bottom: 25%;
-    transform: translateX(50%);
+body {
+  height: 1000px;
 }
 
-.container-ecran{
-    display: flex;
-    height: 20%;
-    width: 100%;
-    background-color: black;
-    align-items: end;
-    justify-content: right;
+.container {
+  box-shadow: 0 0 0 0 black;
+  border: 5px solid black;
+  border-radius: 50px;
+  height: 500px;
+  width: 430px;
+  background-color: black;
+  position: absolute;
+  right: 50%;
+  top: 25%;
+  bottom: 25%;
+  transform: translateX(50%);
 }
 
-.container-bouton{
-    display: grid;
-    height: 80%;
-    width: 100%;
-    background-color: black;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-areas: 
-        "a b c d"
-        "e f g h"
-        "i j k l"
-        "m n o p"
-        "zero zero s t";
-    align-items: center; 
-/*
+.container-ecran {
+  margin: auto auto;
+  display: flex;
+  height: 20%;
+  width: 100%;
+  /* background-color: black; */
+  align-items: end;
+  justify-content: right;
+}
+
+.container-bouton {
+  border-radius: 50px;
+  display: grid;
+  height: 80%;
+  width: 100%;
+  background-color: black;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+    "a b c d"
+    "e f g h"
+    "i j k l"
+    "m n o p"
+    "zero zero s t";
+  align-items: center;
+  /*
 align item permet de regler en vertical
 justify item permet de regler en horizontal
 */
-    justify-items: center;
-
+  justify-items: center;
 }
-.sept{
-    grid-area: e;
+.sept {
+  grid-area: e;
 }
-.huigt{
-    grid-area: f;
+.huigt {
+  grid-area: f;
 }
-.neuf{
-    grid-area: g;
+.neuf {
+  grid-area: g;
 }
-.quatre{
-    grid-area: i;
+.quatre {
+  grid-area: i;
 }
-.cinq{
-    grid-area: j;
+.cinq {
+  grid-area: j;
 }
-.six{
-    grid-area: k;
+.six {
+  grid-area: k;
 }
-.un{
-    grid-area:m ;
+.un {
+  grid-area: m;
 }
-.deux{
-    grid-area: n;
+.deux {
+  grid-area: n;
 }
-.trois{
-    grid-area:o ;
+.trois {
+  grid-area: o;
 }
-.virgule{
-    grid-area: s ;
+.virgule {
+  grid-area: s;
 }
-.egal{
-    grid-area: t;
+.egal {
+  grid-area: t;
 }
-.delete{
-    grid-area: a;
+.delete {
+  grid-area: a;
 }
 button,
-span{
-    display:flex;
-    justify-content: center;
-    width: 55px; 
-    height:50px;
-    background-color: rgba(255, 255, 255, 0.274);
-    align-items: center;
-    text-align: center;
-    border-radius: 50%;
-    font-size: 20px;
-    color: white;
+span {
+  display: flex;
+  justify-content: center;
+  width: 55px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.274);
+  align-items: center;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 20px;
+  color: white;
 }
-.zero{
-    text-align: left;
-    /* width: 80%; */
-    padding-left:  25%;
-    padding-right: 25%;
-    border-radius: 100px;
-    grid-area: zero;
+.zero {
+  text-align: left;
+  /* width: 80%; */
+  padding-left: 25%;
+  padding-right: 25%;
+  border-radius: 100px;
+  grid-area: zero;
 }
 
 /*          <span class="delete"> AC </span>
@@ -131,47 +133,44 @@ span{
 .moin,
 .plus,
 .egal,
-.orange{
-    background-color: orange;
+.orange {
+  background-color: orange;
 }
 
 .delete,
-.posifif,
+.signe,
 .poucentage,
-.gris{
-    background-color: grey;
+.gris {
+  background-color: grey;
 }
 @keyframes brillant {
-    0%{
-        background-color: rgba(255, 255, 255, 0.479);
-    }
-    /* 50% {
+  0% {
+    background-color: rgba(255, 255, 255, 0.479);
+  }
+  /* 50% {
         /* opacity: 0.5; */
-    /* } */ 
-    100%{
-        background-color: rgba(255, 255, 255, 0.274)
-    }
-    
+  /* } */
+  100% {
+    background-color: rgba(255, 255, 255, 0.274);
+  }
 }
 
-.animation{
-    cursor: pointer;
-    animation: brillant 0.25s ;
+.animation {
+  cursor: pointer;
+  animation: brillant 0.25s;
 }
 /* .lotion */
 
-h3{
-    padding-right: 37px;
-    font-size: xx-large;
-    margin: 10px;
-    text-align: right;
-    color: white;
-
-    
+h3 {
+  padding-right: 37px;
+  font-size: xx-large;
+  margin: 10px;
+  text-align: right;
+  color: white;
 }
 
-.lotion{
-    background-color: white;
-    color: orange;
-    transition: 0.25s;
+.lotion {
+  background-color: white;
+  color: orange;
+  transition: 0.25s;
 }
