@@ -1,0 +1,177 @@
+*{
+    margin:0;
+}
+
+
+
+.container{
+    height: 500px;
+    width: 430px;
+    background-color: black;
+    /* display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; */
+    position: absolute;
+    right: 50%;
+    top: 25%;
+    bottom: 25%;
+    transform: translateX(50%);
+}
+
+.container-ecran{
+    display: flex;
+    height: 20%;
+    width: 100%;
+    background-color: black;
+    align-items: end;
+    justify-content: right;
+}
+
+.container-bouton{
+    display: grid;
+    height: 80%;
+    width: 100%;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+        "a b c d"
+        "e f g h"
+        "i j k l"
+        "m n o p"
+        "zero zero s t";
+    align-items: center; 
+/*
+align item permet de regler en vertical
+justify item permet de regler en horizontal
+*/
+    justify-items: center;
+
+}
+.sept{
+    grid-area: e;
+}
+.huigt{
+    grid-area: f;
+}
+.neuf{
+    grid-area: g;
+}
+.quatre{
+    grid-area: i;
+}
+.cinq{
+    grid-area: j;
+}
+.six{
+    grid-area: k;
+}
+.un{
+    grid-area:m ;
+}
+.deux{
+    grid-area: n;
+}
+.trois{
+    grid-area:o ;
+}
+.virgule{
+    grid-area: s ;
+}
+.egal{
+    grid-area: t;
+}
+.delete{
+    grid-area: a;
+}
+button,
+span{
+    display:flex;
+    justify-content: center;
+    width: 55px; 
+    height:50px;
+    background-color: rgba(255, 255, 255, 0.274);
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 20px;
+    color: white;
+}
+.zero{
+    text-align: left;
+    /* width: 80%; */
+    padding-left:  25%;
+    padding-right: 25%;
+    border-radius: 100px;
+    grid-area: zero;
+}
+
+/*          <span class="delete"> AC </span>
+            <span class="posifif"> +/- </span>
+            <span class="poucentage"> % </span>
+            <span class="division"> ÷ </span>
+            <span class="multiplication"> x</span>
+            <span class="moin"> - </span>
+            <span class="plus"> +</span>
+            <span class="="> =</span>
+            <span class="virgule"> ,</span>
+            <span class="neuf">9</span>
+            <span class="huigt">8</span>
+            <span class="sept">7</span>
+            <span class="six">6</span>
+            <span class="cinq">5</span>
+            <span class="quatre">4</span>
+            <span class="trois">3</span>
+            <span class="deux">2</span>
+            <span class="un">1</span>
+            <span class="zero">0</span> */
+.division,
+.multiplication,
+.moin,
+.plus,
+.egal,
+.orange{
+    background-color: orange;
+}
+
+.delete,
+.posifif,
+.poucentage,
+.gris{
+    background-color: grey;
+}
+@keyframes brillant {
+    0%{
+        background-color: rgba(255, 255, 255, 0.479);
+    }
+    /* 50% {
+        /* opacity: 0.5; */
+    /* } */ 
+    100%{
+        background-color: rgba(255, 255, 255, 0.274)
+    }
+    
+}
+
+.animation{
+    cursor: pointer;
+    animation: brillant 0.25s ;
+}
+/* .lotion */
+
+h3{
+    padding-right: 37px;
+    font-size: xx-large;
+    margin: 10px;
+    text-align: right;
+    color: white;
+
+    
+}
+
+.lotion{
+    background-color: white;
+    color: orange;
+    transition: 0.25s;
+}
